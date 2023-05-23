@@ -1,0 +1,202 @@
+*{ 
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+.body{
+    min-height: 100vh;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/BG.png) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#text{
+    position: absolute;
+    font-size: 100px;
+    color: #DAA06D;
+    text-shadow: 2px 4px 5px #ffffff;
+    top:120px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.parallax img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax img#cat-left{
+    position: fixed;
+    transform: translateX(-80px);
+}
+.parallax img#floor-left{
+    position: fixed;
+    transform: translateX(-132px);
+}
+.parallax img#paw-right-upper{
+    position: fixed;
+    transform: translateY(-100px);
+
+    
+}
+
+.parallax img#paw-lower-right{
+    position: fixed;
+    transform: translateX(50px);
+    transform: translateY(10px);
+}
+.parallax img#paw-right-middle{
+    position: fixed;
+    transform: translateX(110px);
+    transform: translateY(-80px);
+}
+.parallax img#paw-right-mid{
+    position: fixed;
+    transform: translateX(100px);
+    transform: translateY(-75px);
+}
+
+#text-lower{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    color: #F8C4CB;
+    bottom:140px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.sec{
+    position: relative;
+    background-color: #F8C4CB;
+    padding: 70px 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.sec h2{
+    font-size: 3em;
+    color: #FFF8EC;
+    text-shadow: 2px 2px 2px rgb(140, 140, 140);
+    margin-bottom: 10px;
+}
+.sec p{
+    font-size: 1em;
+    color: #FFF8EC;
+    font-weight: 300;
+    text-align: justify;
+    text-shadow: 2px 2px 2px rgb(140, 140, 140);
+    display: inline;
+}
+
+.texthighlight{
+    font-size: 1em;
+    color: #cf689d;
+    font-weight: 350;
+    text-align: justify;
+    text-shadow: 2px 2px 2px rgb(199, 199, 199);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+}
+
+.container{
+    margin-top: 80px;
+}
+
+.button-maze {
+    position: relative;
+    color: #DAA06D; 
+    margin-bottom: 50px; 
+
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+
+    background-color: #FFF8EC;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out, .4s color;
+
+    text-align: center;
+    font-size: 23px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    cursor: pointer;
+
+}
+
+
+.button-maze:hover{
+    position: relative;
+    color: #DAA06D; 
+    margin-bottom: 50px; 
+
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+
+    background-color: #ffe7be;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .1s color;
+
+    text-align: center;
+    font-size: 23px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    cursor: pointer;
+
+}
+
+.button-maze:active{
+    position: relative;
+    color: #ffffff; 
+    margin-bottom: 50px; 
+
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+
+    border: 2px dashed #ffffff;
+    border-radius: 15px;
+
+    background-color: #ffb5ea;
+    box-shadow: 0 0 0 4px #9e9689, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .1s color;
+
+    text-align: center;
+    font-size: 23px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    cursor: pointer;
+
+}
+
+.music{
+    width: 65px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: url(https://cdn0.iconfinder.com/data/icons/multimedia-cool-vector-1/128/38-256.png);
+}
+
+.sound{
+    content: url(https://cdn0.iconfinder.com/data/icons/multimedia-cool-vector-1/128/36-512.png);
+}
+
