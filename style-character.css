@@ -162,11 +162,11 @@ body{
             overflow-x: scroll;
             overflow-y: hidden;
             white-space: nowrap;
-            scroll-snap-type: x mandatory;
             scroll-snap-align: start;
      
 
         }
+        
         #formList{
             width:1280px;
             max-width: 100%;

@@ -65,7 +65,6 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
-
 <script>
         var bombsound = new Audio("bomb.mp3");
         var count_music = 0;
@@ -593,6 +592,7 @@ var countdownTimer = setInterval('NubwiNatee()',1000)
                             }
                         })
                 }else if(count_Cupcake >= 8 ){
+                
                 Swal.fire({
                 imageUrl: 'https://storage.googleapis.com/sticker-prod/sX90U4BNjjsjvGRuqTnk/2-2.thumb128.png',
                 imageHeight: 150,
@@ -708,9 +708,13 @@ var countdownTimer = setInterval('NubwiNatee()',1000)
     //window.localStorage.setItem('game-state',JSON)
 
     
-
-
+    //var i = 5
     
+    //window.location.href = "history.php?img="+"https://storage.googleapis.com/sticker-prod/h3fYKAtBc7bJHvjP2MDW/22.thumb128.png"
+    //"historyphp?cupcake="+i;
+    var img = "<?php echo $img;?>"
+    console.log(img)
+
 
 
 
