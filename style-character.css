@@ -164,8 +164,7 @@ body{
             scroll-snap-align: start;
         }
         
-<<<<<<< HEAD
-=======
+
             ::-webkit-scrollbar {
                 height: 30px;
             }
@@ -191,9 +190,6 @@ body{
             }*/
 
 
-
-
->>>>>>> 0fc7d9c97216066ce9f4496941dd962282e99909
         #formList{
             width:1280px;
             max-width: 100%;

@@ -1,8 +1,3 @@
-
-<?php
- $img = $_GET['img'];
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -707,17 +702,8 @@ var countdownTimer = setInterval('NubwiNatee()',1000)
 
     //window.localStorage.setItem('game-state',JSON)
 
-    
-    //var i = 5
-    
-    //window.location.href = "history.php?img="+"https://storage.googleapis.com/sticker-prod/h3fYKAtBc7bJHvjP2MDW/22.thumb128.png"
-    //"historyphp?cupcake="+i;
-    var img = "<?php echo $img;?>"
-    console.log(img)
-
-
-
 
 </script>
+
 
 </html>
