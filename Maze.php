@@ -802,7 +802,7 @@ $img = $_GET['img'];
         document.getElementById("timer").style.color = "black";
     }
     
-    //ASD
+    //ASDas
 </script>
 
 </html>
