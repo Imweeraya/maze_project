@@ -1,3 +1,4 @@
+
 <?php
 $img = $_GET['img'];
 ?>
@@ -66,7 +67,6 @@ $img = $_GET['img'];
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 
 
 <script>
@@ -1259,6 +1259,108 @@ $img = $_GET['img'];
 
             }
 
+            if(count_Cupcake == 10 ){
+                Swal.fire({
+                imageUrl: 'https://storage.googleapis.com/sticker-prod/sX90U4BNjjsjvGRuqTnk/1-2.thumb128.png',
+                imageHeight: 150,
+                title : 'PURRRRR PERFECTT!! MEOW MEOW! Cupcake : '+count_Cupcake +' / 10',
+                text: 'Click button Meow!',
+                imageAlt: 'A tall image',
+                confirmButtonText: 'MEOW Again?'}).then((result) => {
+                            if (result.isConfirmed) {
+                                ready = 1;
+                                count = 1;
+                                createMaze();
+                                return;
+                            }else{
+                                ready = 1;
+                                count = 1;
+                                createMaze();
+                                return;
+                            }
+                        })
+                }else if(count_Cupcake >= 8 ){
+                
+                Swal.fire({
+                imageUrl: 'https://storage.googleapis.com/sticker-prod/sX90U4BNjjsjvGRuqTnk/2-2.thumb128.png',
+                imageHeight: 150,
+                title : 'AMAZING MEOW MEOW! Cupcake : '+count_Cupcake +' / 10',
+                text: 'Click button Meow!',
+                imageAlt: 'A tall image',
+                confirmButtonText: 'MEOW Again?'}).then((result) => {
+                            if (result.isConfirmed) {
+                                ready = 1;
+                                count = 1;
+                                createMaze();
+                                return;
+                            }else{
+                                ready = 1;
+                                count = 1;
+                                createMaze();
+                                return;
+                            }
+                        })
+                }else if(count_Cupcake >= 6 ){
+                Swal.fire({
+                imageUrl: 'https://storage.googleapis.com/sticker-prod/sX90U4BNjjsjvGRuqTnk/15-2.thumb128.png',
+                imageHeight: 150,
+                title : 'GOOD JOB MEOW MEOW! Cupcake : '+count_Cupcake +' / 10',
+                text: 'Click button Meow!',
+                imageAlt: 'A tall image',
+                confirmButtonText: 'MEOW Again?'}).then((result) => {
+                            if (result.isConfirmed) {
+                                ready = 1;
+                                count = 1;
+                                createMaze();
+                                return;
+                            }else{
+                                ready = 1;
+                                count = 1;
+                                createMaze();
+                                return;
+                            }
+                        })
+                }else if(count_Cupcake >= 4 ){
+                Swal.fire({
+                imageUrl: 'https://storage.googleapis.com/sticker-prod/sX90U4BNjjsjvGRuqTnk/8-2.thumb128.png',
+                imageHeight: 150,
+                title : 'WELL DONE...MEOW MEOW! Cupcake : '+count_Cupcake +' / 10',
+                text: 'Click button Meow!',
+                imageAlt: 'A tall image',
+                confirmButtonText: 'MEOW Again?'}).then((result) => {
+                            if (result.isConfirmed) {
+                                ready = 1;
+                                count = 1;
+                                createMaze();
+                                return;
+                            }else{
+                                ready = 1;
+                                count = 1;
+                                createMaze();
+                                return;
+                            }
+                        })
+                }else{
+                Swal.fire({
+                imageUrl: 'https://storage.googleapis.com/sticker-prod/sX90U4BNjjsjvGRuqTnk/20-2.thumb128.png',
+                imageHeight: 150,
+                title : 'I...WANT...MORE...CUPCAKE!!! MEOW! Cupcake : '+count_Cupcake +' / 10',
+                text: 'Click button Meow!',
+                imageAlt: 'A tall image',
+                confirmButtonText: 'MEOW Again?'}).then((result) => {
+                            if (result.isConfirmed) {
+                                ready = 1;
+                                count = 1;
+                                createMaze();
+                                return;
+                            }else{
+                                ready = 1;
+                                count = 1;
+                                createMaze();
+                                return;
+                            }
+                        })
+
             if (kittenLeft == houseLeft && kittenTop == houseTop && key == 1) {
                 document.getElementById("timer").style.color = "#FFEBEB ";
                 seconds = null;
@@ -1368,6 +1470,7 @@ $img = $_GET['img'];
                             return;
                         }
                     })
+
                 }
 
 
@@ -1449,5 +1552,6 @@ $img = $_GET['img'];
     }
     //ASD
 </script>
+
 
 </html>

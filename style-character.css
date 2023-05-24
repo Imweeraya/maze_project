@@ -161,11 +161,10 @@ body{
             overflow-x: scroll;
             overflow-y: hidden;
             white-space: nowrap;
-            scroll-snap-type: x mandatory;
             scroll-snap-align: start;
         }
         
-            ::-webkit-scrollbar{
+            ::-webkit-scrollbar {
                 height: 30px;
             }
 
@@ -191,8 +190,6 @@ body{
             /*::-webkit-scrollbar-track:hover{
                 background-color: #fb3232;
             }*/
-
-
 
 
         #formList{

@@ -27,6 +27,7 @@
 
         <div class="container" id="container-botton">
             <div class="button-maze" onclick="redirectToPage('Cha.php')">Start</div>
+            <div class="button-maze" onclick="redirectToPage('score-handler.php')">History</div>
         </div>
 
         <h2 id ="text-lower" onclick="click()">how to paly<br>▼</h2>
