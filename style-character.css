@@ -68,7 +68,7 @@ body{
             -webkit-user-select: none;
             width: 60%;
             margin: 0 auto;
-            margin-top: 20px;
+            margin-top: 50px;
 
             cursor: pointer;
             
@@ -98,7 +98,7 @@ body{
             user-select: none;
             -webkit-user-select: none;
             margin: 0 auto;
-            margin-top: 20px;
+            margin-top: 50px;
             
             cursor: pointer;
             
@@ -117,7 +117,6 @@ body{
             border-radius: 8px;
             line-height: 20px;
     
-            margin-top: 20px;
             outline: none;
             padding: 13px 23px;
             position: relative;
@@ -128,7 +127,7 @@ body{
             user-select: none;
             -webkit-user-select: none;
             margin: 0 auto;
-            margin-top: 20px;
+            margin-top: 50px;
             
             cursor: pointer;
             
@@ -163,10 +162,38 @@ body{
             overflow-y: hidden;
             white-space: nowrap;
             scroll-snap-align: start;
-     
-
         }
         
+<<<<<<< HEAD
+=======
+            ::-webkit-scrollbar {
+                height: 30px;
+            }
+
+            ::-webkit-scrollbar-track{
+                background:rgb(237, 237, 237);
+                border: 1px solid gray;
+                border-radius: 50px;
+            }
+
+            ::-webkit-scrollbar-thumb{
+                background-color: #f78e8e;
+                border: 3px solid #ff5252;
+                border-radius: 50px;
+            }
+            ::-webkit-scrollbar-thumb:hover{
+                background-color: #ff6363;
+                border-radius: 50px;
+            }
+
+            /*::-webkit-scrollbar-track:hover{
+                background-color: #fb3232;
+            }*/
+
+
+
+
+>>>>>>> 0fc7d9c97216066ce9f4496941dd962282e99909
         #formList{
             width:1280px;
             max-width: 100%;
