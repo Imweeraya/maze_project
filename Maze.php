@@ -58,6 +58,8 @@ $img = $_GET['img'];
         <button class="prev-button" onclick="redirectToPage('MazeStart.php')"> Back </button>
         <button class="Restart-button" onclick="restart()"> Restart </button>
     </div>
+    <button onclick="storage()">abc</button>
+    <button onclick="callStorage()">ssss</button>
 
     <?php // Local
     ?>
@@ -1407,29 +1409,44 @@ $img = $_GET['img'];
 
     var data = {
         // Replace with the data you want to send in the POST request
-        img: 'img',
+        img: '<?php echo $img; ?>',
         time: '0.5',
         cake: 'cake',
     };
 
-    var requestOptions = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    };
+    /*    var requestOptions = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        };
 
-    fetch(url, requestOptions)
-        .then(response => response.json())
-        .then(result => {
-            // Handle the API response
-            console.log(result);
-        })
-        .catch(error => {
-            // Handle any errors
-            console.log('Error:', error);
-        });
+        fetch(url, requestOptions)
+            .then(response => response.json())
+            .then(result => {
+                // Handle the API response
+                console.log(result);
+            })
+            .catch(error => {
+                // Handle any errors
+                console.log('Error:', error);
+            });*/
+
+    // Local storage
+    function storage() {
+        var obj = {
+            position: count_Cupcake,
+            time: "5"
+        };
+        localStorage.setItem('user', JSON.stringify(obj));
+        var storeObj = JSON.parse(localStorage.getItem('user'));
+        console.log(storeObj);
+    }
+    function callStorage(){
+        var callobj = JSON.parse(localStorage.getItem('user'))
+        console.log(callobj)
+    }
 </script>
 
 </html>
