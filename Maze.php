@@ -614,11 +614,17 @@ $img = $_GET['img'];
                         if (result.isConfirmed) {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         } else {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         }
@@ -635,11 +641,17 @@ $img = $_GET['img'];
                         if (result.isConfirmed) {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         } else {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         }
@@ -656,11 +668,17 @@ $img = $_GET['img'];
                         if (result.isConfirmed) {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         } else {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         }
@@ -677,11 +695,17 @@ $img = $_GET['img'];
                         if (result.isConfirmed) {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         } else {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         }
@@ -698,11 +722,17 @@ $img = $_GET['img'];
                         if (result.isConfirmed) {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         } else {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         }
@@ -737,6 +767,9 @@ $img = $_GET['img'];
     function restart() {
         ready = 1;
         count = 1;
+        kittenLeft = 0+"px"
+        kittenTop = 30+"px"
+        addScore()
         createMaze();
         
     }
@@ -795,6 +828,7 @@ $img = $_GET['img'];
     function callStorage(){
         var callobj = JSON.parse(localStorage.getItem('user'))
         console.log(callobj)
+        ready = 0;
         createMaze();
         map = callobj.mapstorage 
         createMaze();
