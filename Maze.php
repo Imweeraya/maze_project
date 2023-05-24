@@ -596,8 +596,12 @@ $img = $_GET['img'];
 
             if (kittenLeft == houseLeft && kittenTop == houseTop && key == 1) {
                 document.getElementById("timer").style.color = "#FFEBEB ";
+                data.time = seconds
                 seconds = null;
-
+                
+                data.cake = count_Cupcake
+                console.log(data.cake+","+data.time+":"+count_Cupcake+","+seconds)
+                addScore()
                 if (count_Cupcake == 10) {
                     Swal.fire({
                         imageUrl: 'https://storage.googleapis.com/sticker-prod/sX90U4BNjjsjvGRuqTnk/1-2.thumb128.png',
@@ -742,15 +746,16 @@ $img = $_GET['img'];
 
 
     // Api
- /*   var url = 'https://crudcrud.com/api/07d04803500d458e8bf042940e819b2a/maze'; // Replace with your API endpoint URL
+    var url = 'https://crudcrud.com/api/5d9aaf67d5e94fdc88f93375da4c1830/maze2'; // Replace with your API endpoint URL
 
     var data = {
         // Replace with the data you want to send in the POST request
         img: '<?php echo $img; ?>',
-        time: '0.5',
-        cake: 'cake',
+        time: seconds,
+        cake: count_Cupcake,
     };
 
+    function addScore(){
         var requestOptions = {
             method: 'POST',
             headers: {
@@ -769,7 +774,8 @@ $img = $_GET['img'];
                 // Handle any errors
                 console.log('Error:', error);
             });
-*/
+        }
+
     // Local storage
     function storage() {
         var obj = {
@@ -789,6 +795,7 @@ $img = $_GET['img'];
     function callStorage(){
         var callobj = JSON.parse(localStorage.getItem('user'))
         console.log(callobj)
+        createMaze();
         map = callobj.mapstorage 
         createMaze();
         kitten.style.left = callobj.kitten_left_right+"px";
