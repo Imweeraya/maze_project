@@ -16,6 +16,17 @@
 
     <div id="leaderboard">
       <table id="table">
+        <tr>
+          <th class="headimg-pop">
+            Character
+          </th>
+          <th class="headcake">
+            Cupcakes
+          </th>
+          <th class="headtime">
+            Time use
+          </th>
+        </tr>
         <!--
         <tr>
           <td class="img-pop">
@@ -33,12 +44,16 @@
       </table>
 
       <div id="buttons">
-        <button class="exit">Exit</button>
+        <button class="exit" onclick="redirectToPage('mazeStart.php')">Exit</button>
       </div>
     </div>
   </main>
 
   <script>
+    function redirectToPage(url) {
+        window.location.href = url;
+    }
+
     var data = {
       img: "",
       cake: "",
@@ -47,7 +62,7 @@
 
     var board = document.getElementById("table");
 
-    fetch('https://crudcrud.com/api/5d9aaf67d5e94fdc88f93375da4c1830/maze2')
+    fetch('https://crudcrud.com/api/769e737e5cb3423dbe93e51bfc76592d/maze3')
       .then(function(response) {
         return response.json();
       })
@@ -94,7 +109,7 @@
                 ${data.cake}/10
               </td>
               <td class="time">
-                ${data.time}
+                ${60-data.time} s
               </td>
             </tr>
           `);

@@ -234,7 +234,6 @@ $img = $_GET['img'];
 
 
         if (count == 1) {
-
             seconds = 59;
             count = 0
             count_Cupcake = 0
@@ -276,6 +275,7 @@ $img = $_GET['img'];
 
         document.getElementById("cakescore").innerHTML = count_Cupcake + " / 10";
         document.getElementById("keyscore").innerHTML = key + " / 1";
+        document.getElementById("timer").style.color = "black";
 
 
 
@@ -614,11 +614,17 @@ $img = $_GET['img'];
                         if (result.isConfirmed) {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         } else {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         }
@@ -635,11 +641,17 @@ $img = $_GET['img'];
                         if (result.isConfirmed) {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         } else {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         }
@@ -656,11 +668,17 @@ $img = $_GET['img'];
                         if (result.isConfirmed) {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         } else {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         }
@@ -677,11 +695,17 @@ $img = $_GET['img'];
                         if (result.isConfirmed) {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         } else {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         }
@@ -698,11 +722,17 @@ $img = $_GET['img'];
                         if (result.isConfirmed) {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         } else {
                             ready = 1;
                             count = 1;
+                            kittenLeft = 0+"px"
+                            kittenTop = 30+"px"
+                            storage()
                             createMaze();
                             return;
                         }
@@ -737,6 +767,9 @@ $img = $_GET['img'];
     function restart() {
         ready = 1;
         count = 1;
+        kittenLeft = 0+"px"
+        kittenTop = 30+"px"
+        addScore()
         createMaze();
         
     }
@@ -746,7 +779,7 @@ $img = $_GET['img'];
 
 
     // Api
-    var url = 'https://crudcrud.com/api/5d9aaf67d5e94fdc88f93375da4c1830/maze2'; // Replace with your API endpoint URL
+    var url = 'https://crudcrud.com/api/769e737e5cb3423dbe93e51bfc76592d/maze3'; // Replace with your API endpoint URL
 
     var data = {
         // Replace with the data you want to send in the POST request
@@ -795,6 +828,7 @@ $img = $_GET['img'];
     function callStorage(){
         var callobj = JSON.parse(localStorage.getItem('user'))
         console.log(callobj)
+        ready = 0;
         createMaze();
         map = callobj.mapstorage 
         createMaze();

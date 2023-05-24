@@ -37,7 +37,7 @@
   
   h1 {
     font-family: "Rubik", sans-serif;
-    font-size: 1.9rem;
+    font-size: 32px;
     color: #000000;
     text-transform: uppercase;
   }
@@ -67,6 +67,15 @@
     padding: 1rem 2rem;
     position: relative;
   }
+
+  th {
+    height: 75px;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    margin: 5px;
+    position: relative;
+  }
+
   
   .img-pop img {
       width: 2rem;
@@ -76,7 +85,7 @@
   .cake img{
       width: 1.5rem;
       object-fit: contain;
-      margin-right: 2rem;
+      margin-right: 5px;
   }
   
 
@@ -115,14 +124,15 @@
     font-size: 1.3rem;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #FFC0C8;
+    background-color: #000000;
     border: 0;
+    transition: 0.25s;
 
     border-radius: 2rem;
     cursor: pointer;
   }
   
   .exit:hover {
-    background-color: #000000;
+    background-color: #ff6161;
     color: #fff;
   }
