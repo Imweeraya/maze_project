@@ -17,6 +17,7 @@
       .then(function (maze) {
         var mainListElm = document.getElementById('main-list')
         mainListElm.innerHTML = ''
+        
         for(var i=0; i < maze.length; i++) {
           var liElm = document.createElement('li')
           console.log(maze[i])
